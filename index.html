@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoShoji</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="photobooth">
+        <h1>PhotoShoji</h1>
+        <div class="camera-container">
+        <video id="video" autoplay></video>
+        <div id="flash" class="flash"></div>
+        </div>
+        <canvas id="canvas" style="display:none;"></canvas>
+        <div id="countdown" class="countdown"></div>
+        <div id="gallery" class="gallery"></div>
+        <div class="controls">
+        <button id="start" class="styled-button">Start Photobooth</button>
+        <div id="color-picker" class="color-picker" style="display:none;">
+            <label for="frameColor">Choose Frame Color:</label>
+            <input type="color" id="frameColor" value="#ffcc00">
+            <button id="apply-frame" class="styled-button">Apply Frame</button>
+        </div>
+        <button id="download" class="styled-button" style="display:none;">Download Photo</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

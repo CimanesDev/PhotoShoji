@@ -9,13 +9,15 @@
 <body>
     <div class="photobooth">
         <h1>PhotoShoji</h1>
-        <div class="camera-container">
-        <video id="video" autoplay></video>
-        <div id="flash" class="flash"></div>
+        <div class="container">
+            <div class="camera-container">
+                <video id="video" autoplay></video>
+                <div id="flash" class="flash"></div>
+            </div>
+            <canvas id="canvas" style="display:none;"></canvas>
+            <div id="gallery" class="gallery"></div>
         </div>
-        <canvas id="canvas" style="display:none;"></canvas>
         <div id="countdown" class="countdown"></div>
-        <div id="gallery" class="gallery"></div>
         <div class="controls">
         <button id="start" class="styled-button">Start Photobooth</button>
         <div id="color-picker" class="color-picker" style="display:none;">

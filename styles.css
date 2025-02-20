@@ -53,21 +53,29 @@ body {
   
   .gallery {
     display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
+    flex-direction: column;
+    margin: 20px 30px;
+    max-height: 100px;
+    max-width: 230px;
+    align-items: right;
+
   }
   
   .gallery img {
     border: 5px solid transparent;
-    border-radius: 10px;
     max-width: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   
+  .container{
+    display: flex;
+    flex-direction: row;
+  }
+
   .controls {
     margin-top: 20px;
   }
+
+  
   
   .styled-button {
     background-color: #ffcc00;
